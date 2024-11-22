@@ -1,6 +1,11 @@
 export type RootStackParamList = {
-    Home: { newItem?: { dishName: string, description: string, course: string, price: number } };
-    AddMenu: undefined;
-    FilterMenu: undefined;
+  Home: {menuItems?: { dishName: string; description: string; course: string; price: number }[]; // For batch updates
   };
+
+  AddMenu: { menuItems: { dishName: string; description: string; course: string; price: number; }[]};
+  
+  FilterMenu: { menuItems: { dishName: string; description: string; course: string; price: number; }[]};};
+
+
+
   
